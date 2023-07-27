@@ -14,60 +14,103 @@
           alt="Green & dense fern leaves"
         />
         <div class="image-logo">
-          <img
-            src="./images/odin_logo_design_4x-removebg-preview.png"
-            alt="Odin's face logo"
-          />
+          <img src="./images/odin-logo.png" alt="Odin's face logo" />
+          <h1>Odin</h1>
         </div>
         <caption>
-          Photo by
-          <a href="https://unsplash.com/@haliewestphoto">Halie West</a>
-          on
-          <a href="https://unsplash.com">Unsplash</a>
+          <p>
+            Photo by
+            <a target="_blank" href="https://unsplash.com/@haliewestphoto"
+              >Halie West</a
+            >
+            on
+            <a target="_blank" href="https://unsplash.com">Unsplash</a>
+          </p>
         </caption>
       </div>
+
       <form action="" method="post">
         <h2>
           This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up now
-          to get started
+          this in your life to help you realize your deepest dreams.
+          <br />Sign up now to get started
         </h2>
         <h2>You <i>know</i> you want to</h2>
-        <div class="user-input">
-          <h2></h2>
-          <div class="form-input">
-            <label for="first-name">First Name</label
-            ><input type="text" id="first-name" name="first-name" />
+        <div class="input-area">
+          <h2>Let's do this!</h2>
+          <div class="form-row">
+            <div class="form-input">
+              <label for="first-name">First Name</label
+              ><input
+                minlength="3"
+                maxlength="20"
+                ="text"
+                id="first-name"
+                name="first-name"
+                placeholder="John"
+              />
+            </div>
+            <div class="form-input">
+              <label for="last-name">Last Name</label
+              ><input
+                minlength="3"
+                maxlength="20"
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Smith"
+              />
+            </div>
           </div>
-          <div class="form-input">
-            <label for="last-name">Last Name</label
-            ><input type="text" id="last-name" name="last-name" />
+          <div class="form-row">
+            <div class="form-input">
+              <label for="email">Email</label>
+              <input
+                placeholder="email@example.com"
+                type="email"
+                id="email"
+                name="email"
+              />
+            </div>
+            <div class="form-input">
+              <label for="phone-number">Phone Number</label
+              ><input
+                type="tel"
+                id="phone-number"
+                name="phone-number"
+                placeholder="07123456789"
+                pattern="[0-9]{11}"
+              />
+            </div>
           </div>
-          <div class="form-input">
-            <lable for="email">Email</lable>
-            <input type="email" id="email" name="email" />
-          </div>
-          <div class="form-input">
-            <label for="phone-number">Phone Number</label
-            ><input
-              type="number"
-              id="phone-number"
-              name="phone-number"
-              placeholder="07123456789"
-            />
-          </div>
-          <div class="form-input">
-            <label for="password-1">Password</label
-            ><input type="password" id="password-1" name="password" />
-          </div>
-          <div class="form-input">
-            <label for="password-2">Confirm Password</label
-            ><input type="password" id="password-2" name="password-2" />
+          <div class="form-row">
+            <div class="form-input">
+              <label for="password-1">Password</label
+              ><input
+                minlength="8"
+                maxlength="255"
+                type="password"
+                id="password-1"
+                name="password-1"
+              />
+              <p style="visibility: hidden">* Passwords do not match</p>
+            </div>
+            <div class="form-input">
+              <label for="password-2">Confirm Password</label
+              ><input
+                minlength="8"
+                maxlength="255"
+                type="password"
+                id="password-2"
+                name="password-2"
+              />
+            </div>
           </div>
         </div>
         <button>Create Account</button>
         <p>Alreaady have an account? <a href="">Log in</a></p>
       </form>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
